@@ -23,7 +23,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #55887c;
+  background: #4C4C4C;
   transition: bottom 0.5s ease, top 0.5s ease;
   z-index: 1;
 }

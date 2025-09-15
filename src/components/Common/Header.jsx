@@ -42,13 +42,13 @@ const Header = () => {
                 </div>
 
                 {/* Navbar */}
-                <div id="navbar" className="hidden md:flex items-center justify-center relative" style={{ width: 'calc(100% - 20rem)', maxWidth: '40rem' }}>
+                <div id="navbar" className="hidden md:flex items-center justify-center md:mr-10 ml-20 relative" style={{ width: 'calc(100% - 20rem)', maxWidth: '40rem' }}>
                     <nav ref={navRef} className="w-full flex justify-center relative gap-[3vw]">
                         {navLinks.map((link, idx) => (
                             <Link
                                 key={link.path}
                                 to={link.path}
-                                className="nav-link text-primary font-semibold transition-all duration-300 hover:scale-110"
+                                className="nav-link text-primary font-semibold transition-all duration-300 hover:scale-110 md:text-sm"
                                 onMouseEnter={() => setHoverIdx(idx)}
                                 onMouseLeave={() => setHoverIdx(null)}
                                 onClick={() => setActiveIdx(idx)}
