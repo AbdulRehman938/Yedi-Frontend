@@ -4,7 +4,10 @@ const Hero = () => {
   return (
     <div className='w-full h-[120vh] 2xl:h-[120vh] relative overflow-hidden'>
       {/* Background path image */}
-      <img src="/path.svg" alt="path" className='absolute inset-0 w-full h-auto sm:h-auto h-[300px] object-cover z-0' />
+      {/* Desktop/Tablet path image */}
+      <img src="/path.svg" alt="path" className='absolute inset-0 w-full h-auto sm:block hidden object-cover z-0' />
+      {/* Mobile path image */}
+      <img src="/pathHomeMobile.svg" alt="path mobile" className='absolute inset-0 w-full h-[40rem] mb-[5rem] sm:hidden object-contain z-0' />
 
       {/* Desktop and tablet layout */}
       <div className='hidden sm:block'>
@@ -76,12 +79,11 @@ const Hero = () => {
       </div>
 
       {/* Mobile layout */}
-      <div className='sm:hidden flex flex-col items-center justify-center h-full px-4 text-center mb-[20rem]'>
-        {/* Mobile character image - positioned above text */}
+      <div className='sm:hidden flex flex-col items-center justify-start bg-transparent h-full px-4 text-center mt-10 pt-4'>
 
 
         {/* Mobile text content */}
-        <div className='z-10 flex flex-col items-center'>
+        <div className='z-10 flex flex-col items-center bg-transparent'>
           <h1 className='text-primary text-5xl font-bold leading-tight mb-4'>
             Find Your Restroom
           </h1>
@@ -90,21 +92,22 @@ const Hero = () => {
             Find. Scan. Unlock
           </p>
 
-          <div className='flex flex-col w-full gap-4'>
-            <button className='bg-transparent border border-primary text-primary py-2 px-4 rounded-full text-sm font-medium hover:bg-[#b1b1b128]'>
-              LOCATIONS
-            </button>
-
-            <button className='bg-primary/80 text-white py-2 px-4 rounded-full text-sm font-medium hover:bg-primary'>
-              DOWNLOAD APP
-            </button>
-          </div>
+         
         </div>
         <img
           src="/Home-character.svg"
           alt="character"
-          className='w-[70%] max-w-[250px] mb-8 z-10'
+          className='w-[50%] max-w-[250px] mb-8 z-10'
         />
+         <div className='flex justify-between items-center w-full gap-4 z-10'>
+            <button className='bg-transparent border border-primary text-primary py-2 px-4 rounded-full w-[45%] text-sm font-medium hover:bg-[#b1b1b128]'>
+              LOCATIONS
+            </button>
+
+            <button className='bg-primary/80 text-white py-2 px-4 rounded-full text-sm font-medium w-[45%] hover:bg-primary'>
+              DOWNLOAD APP
+            </button>
+          </div>
       </div>
     </div>
   )
