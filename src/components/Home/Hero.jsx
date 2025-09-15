@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='w-full h-[115vh] 2xl:h-[90vh] relative overflow-hidden'>
+    <div className='w-full h-[120vh] 2xl:h-[120vh] relative overflow-hidden'>
       {/* Background path image */}
       <img src="/path.svg" alt="path" className='absolute inset-0 w-full h-auto sm:h-auto h-[300px] object-cover z-0' />
 
@@ -11,13 +11,13 @@ const Hero = () => {
         {/* Text content section */}
         <div id='top' className='absolute w-[50%] flex flex-col justify-start items-start h-[50%] 
                                 z-10
-                                2xl:left-[85rem] 2xl:top-[10rem]
+                                2xl:left-[65rem] 2xl:top-[10rem]
                                 xl:left-[40rem] xl:top-[8rem]
                                 lg:left-[30rem] lg:top-[5rem]
                                 md:left-[23rem] md:top-[4rem]'>
           {/* Heading with responsive sizing */}
           <h1 className='text-primary font-bold
-                        2xl:text-[15rem] 2xl:leading-[12rem]
+                        2xl:text-[10rem] 2xl:leading-[8rem]
                         xl:text-[10rem] xl:leading-[8rem]
                         lg:text-[7rem] lg:leading-[6rem]
                         md:text-[5rem] md:leading-[4rem]'>
@@ -35,7 +35,7 @@ const Hero = () => {
 
           {/* Buttons container with responsive sizing */}
           <div className='w-[60%] flex justify-between items-center ml-4
-                        2xl:h-32 2xl:mt-12
+                        2xl:h-24 2xl:mt-12
                         xl:h-16 xl:mt-10
                         lg:h-14 lg:mt-5
                         md:h-12 md:mt-6'>
@@ -68,7 +68,7 @@ const Hero = () => {
           src="/Home-character.svg"
           alt="character"
           className='relative z-10
-                    2xl:top-[35rem] 2xl:left-[30rem] 2xl:w-[30rem]
+                    2xl:top-[30rem] 2xl:left-[20rem] 2xl:w-[20rem]
                     xl:top-[23rem] xl:left-[15rem] xl:w-[15%]
                     lg:top-[17rem] lg:left-[15rem] lg:w-[15%]
                     md:top-[13rem] md:left-[10rem] md:w-[15%]'
