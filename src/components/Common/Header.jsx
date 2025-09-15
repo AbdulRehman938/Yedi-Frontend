@@ -109,7 +109,7 @@ const Header = () => {
                     <Link to="/about" className="text-primary font-semibold hover:scale-110 transition-all duration-300 pl-2" onClick={() => setMenuOpen(false)}>ABOUT US</Link>
                     <Link
                         to="/partner"
-                        className="h-10 flex items-center justify-center rounded-full bg-[#B8B8A7] text-white font-semibold transition-all duration-300 mt-2 ml-4"
+                        className="h-10 flex items-center justify-center rounded-full bg-[#B8B8A7] text-white font-semibold transition-all duration-300 mt-2 -ml-2"
                         style={{ width: 'clamp(10rem, 60%, 14rem)' }}
                         onClick={() => setMenuOpen(false)}
                     >
