@@ -1,31 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.mask-shape {
-  position: relative;
-  -webkit-mask-image: url('/vector5.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center bottom;
-  -webkit-mask-size: contain;
-
-  mask-image: url('/vector5.svg');
-  mask-repeat: no-repeat;
-  mask-position: center bottom;
-  mask-size: contain;
-
-  overflow: hidden;
-}
-
-/* Animation example */
-@keyframes riseInside {
-  0% { transform: translateY(100%); }
-  100% { transform: translateY(0); }
-}
-
-.animate-riseInside {
-  animation: riseInside 1s ease-in-out forwards;
-}
 
 
 

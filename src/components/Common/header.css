@@ -1,0 +1,40 @@
+#partner-btn {
+  position: relative;
+  width: clamp(10rem, 12vw, 14rem);
+  height: 2.8rem;
+  font-weight: 600;
+  font-size: clamp(0.7rem, 0.8vw, 0.9rem);
+  color: white;
+  background: #9c9c8d;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Text stays above the fill */
+#partner-btn .btn-text {
+  position: relative;
+  z-index: 2;
+}
+
+/* Blue fill layer */
+#partner-btn .btn-fill {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #55887c;
+  transition: bottom 0.5s ease, top 0.5s ease;
+  z-index: 1;
+}
+
+/* Hover: slide fill upward */
+#partner-btn:hover .btn-fill {
+  bottom: 0;
+  top: auto;
+}
+
+/* When leaving: let it drain upward (top to bottom) */
+#partner-btn .btn-fill {
+  top: auto;
+}
