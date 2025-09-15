@@ -1,8 +1,27 @@
+import Lenis from '@studio-freight/lenis';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../components/Common/header.css';
 
 const Header = () => {
+    useEffect(() => {
+        const lenis = new Lenis({
+            duration: 1.8,
+            smoothWheel: true,
+            smoothTouch: true,
+            gestureOrientation: 'vertical',
+            syncTouch: true,
+            touchMultiplier: 1.5,
+            wheelMultiplier: 1.2,
+            lerp: 0.15,
+        });
+        const raf = (time) => {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        };
+        requestAnimationFrame(raf);
+        return () => lenis.destroy();
+    }, []);
     const navLinks = [
         { name: 'HOME', path: '/' },
         { name: 'LOCATIONS', path: '/locations' },

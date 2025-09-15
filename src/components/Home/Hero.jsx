@@ -45,21 +45,20 @@ const AnimatedItem = ({ children, className }) => {
 const Hero = () => {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2,
-      smoothWheel: true,      // smooth for mouse wheel
-      smoothTouch: true,      // smooth for touch events (mobile)
-      gestureOrientation: 'vertical', // allow vertical gestures
-      syncTouch: true,        // mimic native touch scroll
-      touchMultiplier: 1.2,  // optional: increase touch scroll speed
-      wheelMultiplier: 1,    // optional: adjust wheel speed
+      duration: 1.8,
+      smoothWheel: true,
+      smoothTouch: true,
+      gestureOrientation: 'vertical',
+      syncTouch: true,
+      touchMultiplier: 1.5,
+      wheelMultiplier: 1.2,
+      lerp: 0.15,
     });
-
     const raf = (time) => {
       lenis.raf(time);
       requestAnimationFrame(raf);
     };
     requestAnimationFrame(raf);
-
     return () => lenis.destroy();
   }, []);
 

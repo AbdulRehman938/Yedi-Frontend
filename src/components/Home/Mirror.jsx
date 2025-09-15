@@ -20,7 +20,16 @@ const Mirror = () => {
   const mobileStyle = marginTop ? { marginTop } : {}
 
   useEffect(() => {
-    const lenis = new Lenis({ duration: 1.2, smooth: true, direction: 'vertical' })
+    const lenis = new Lenis({
+      duration: 1.8,
+      smoothWheel: true,
+      smoothTouch: true,
+      gestureOrientation: 'vertical',
+      syncTouch: true,
+      touchMultiplier: 1.5,
+      wheelMultiplier: 1.2,
+      lerp: 0.15,
+    })
     const raf = (time) => {
       lenis.raf(time)
       requestAnimationFrame(raf)
@@ -44,13 +53,19 @@ const Mirror = () => {
         viewport={{ once: false, amount: 0.2 }}
       />
 
-      <div
+      {/* Fade on entire mirror div */}
+      <motion.div
         id='mirror'
         className='
           w-[95%] xs:w-[95%] sm:w-[90%] md:w-[85%] lg:w-[85%] xl:w-[85%] 2xl:w-[85%]
           h-[15rem] mt-44 xs:h-[24rem] sm:h-[15rem] md:h-[25rem] md:mt-20 lg:h-[30rem] xl:h-[45rem] 2xl:h-[55rem]
           bg-transparent relative z-10 top-[-20rem] rounded-full overflow-hidden flex justify-center items-center
         '
+        variants={fadeVariant}
+        initial="hidden"
+        whileInView="visible"
+        exit="exit"
+        viewport={{ once: false, amount: 0.2 }}
       >
         {/* Fade on mirror image */}
         <motion.img
@@ -68,7 +83,7 @@ const Mirror = () => {
 
         {/* Fade on heading */}
         <motion.h1
-          className='absolute text-white text-[2rem] font-black z-10 text-center lg:text-[4rem] md:text-[3rem]'
+          className='absolute text-white text-[2rem] font-black z-10 text-center lg:text-[4rem] md:text-[3rem] 2xl:text-[7rem]'
           variants={fadeVariant}
           initial="hidden"
           whileInView="visible"
@@ -77,7 +92,7 @@ const Mirror = () => {
         >
           Your key to <br /> Exceptional Success
         </motion.h1>
-      </div>
+      </motion.div>
     </div>
   )
 }
