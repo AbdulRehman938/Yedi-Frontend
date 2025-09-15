@@ -46,16 +46,22 @@ const Hero = () => {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
-      smooth: true,
-      direction: 'vertical'
-    })
+      smoothWheel: true,      // smooth for mouse wheel
+      smoothTouch: true,      // smooth for touch events (mobile)
+      gestureOrientation: 'vertical', // allow vertical gestures
+      syncTouch: true,        // mimic native touch scroll
+      touchMultiplier: 1.2,  // optional: increase touch scroll speed
+      wheelMultiplier: 1,    // optional: adjust wheel speed
+    });
+
     const raf = (time) => {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-    requestAnimationFrame(raf)
-    return () => lenis.destroy()
-  }, [])
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+    requestAnimationFrame(raf);
+
+    return () => lenis.destroy();
+  }, []);
 
   return (
     <div className='w-full min-h-screen 2xl:min-h-screen relative overflow-auto'>
@@ -149,7 +155,7 @@ const Hero = () => {
             className='relative w-[65%] ml-6 left-4 max-w-[250px] mb-5 bottom-4 z-20'
           />
         </AnimatedItem>
-        <div className='flex justify-between items-center w-[80%] gap-4 z-10'>
+        <div className='flex justify-between items-center w-[90%] gap-8 z-10'>
           <AnimatedItem>
             <button className='bg-transparent border border-primary text-primary py-2 px-4 rounded-full w-[120%] text-sm font-medium hover:bg-[#b1b1b128]'>
               LOCATIONS
