@@ -58,7 +58,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <div className='w-full h-[120vh] 2xl:h-[120vh] relative overflow-hidden'>
+    <div className='w-full min-h-screen 2xl:min-h-screen relative overflow-auto'>
       {/* Background path image */}
       <AnimatedItem className='absolute inset-0'>
         <img src="/path.svg" alt="path" className='absolute inset-0 w-full h-auto sm:block hidden object-cover z-0' />
@@ -82,7 +82,7 @@ const Hero = () => {
                         md:text-[5rem] md:leading-[4rem]'>
             Find Your Restroom
           </h1>
-          <p className='text-secondary ml-4
+          <p className='text-black ml-4
                       2xl:text-5xl 2xl:mt-12
                       xl:text-2xl xl:mt-10
                       lg:text-xl lg:mt-5
@@ -138,7 +138,7 @@ const Hero = () => {
           <h1 className='text-primary text-6xl font-bold leading-tight mb-4'>
             Find Your Restroom
           </h1>
-          <p className='text-secondary text-xl mb-8'>
+          <p className='text-black text-xl mb-8'>
             Find. Scan. Unlock
           </p>
         </AnimatedItem>
