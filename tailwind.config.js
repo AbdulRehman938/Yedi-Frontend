@@ -9,6 +9,9 @@ export default {
         secondary: "#efece9",
         third: "#4C4C4C",
       },
+        screens: {
+        lsm: "425px", // add this BEFORE sm if you use it
+      },
     },
   },
   plugins: [],
