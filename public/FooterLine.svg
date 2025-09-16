@@ -1,0 +1,16 @@
+<svg width="1440" height="394" viewBox="0 0 1440 394" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M370 11C138 11.0012 -257.5 11 -257.5 11V61.5H324C390.743 61.5 448.786 58.502 478.396 132.002C506.396 201.504 517 243.504 549 315.502C577.255 379.075 631.93 394.002 701.5 394.002H1661.5V334H716C658.096 334 606.614 319.014 584.5 265.5C559.5 205.002 540.5 159.504 515.5 98.502C489.366 34.7326 438.917 10.9997 370 11Z" fill="#BAB5A2"/>
+<path d="M378 0C146 0.00115585 -249.5 0 -249.5 0V50.5H332C398.743 50.5 456.786 47.502 486.396 121.002C514.396 190.504 529.5 232.502 561.5 304.5C589.755 368.073 654.43 377.5 724 377.5H1669.5V323H724C666.096 323 614.614 308.014 592.5 254.5C567.5 194.002 548.5 148.504 523.5 87.502C497.366 23.7326 446.917 -0.000343347 378 0Z" fill="white"/>
+<line x1="42.4607" y1="2.30735" x2="-68.6926" y2="48.5393" stroke="#DAD6CC" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="221.461" y1="2.30735" x2="110.307" y2="48.5393" stroke="#DAD6CC" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="398.461" y1="2.30735" x2="287.307" y2="48.5393" stroke="#DAD6CC" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="503.438" y1="56.2979" x2="457.298" y2="74.5618" stroke="#DAD6CC" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="550.448" y1="157.302" x2="510.302" y2="173.552" stroke="#DAD6CC" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="588.489" y1="250.319" x2="547.319" y2="268.511" stroke="#DAD6CC" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="672.455" y1="320.305" x2="601.305" y2="349.545" stroke="#DAD6CC" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="828.475" y1="325.313" x2="711.313" y2="375.525" stroke="#DAD6CC" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="999.475" y1="325.313" x2="882.313" y2="375.525" stroke="#DAD6CC" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="1170.47" y1="325.313" x2="1053.31" y2="375.525" stroke="#DAD6CC" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="1341.47" y1="325.313" x2="1224.31" y2="375.525" stroke="#DAD6CC" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="1512.47" y1="325.313" x2="1395.31" y2="375.525" stroke="#DAD6CC" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+</svg>

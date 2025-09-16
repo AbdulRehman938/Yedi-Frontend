@@ -19,7 +19,7 @@ const Work = () => {
     }, [])
 
     return (
-        <div className="w-full h-[200rem] bg-background relative top-[13.5rem] flex justify-center items-start">
+        <div className="w-full h-[180rem] bg-background relative top-[13.5rem] flex justify-center items-start">
             <div className="w-[20%] h-[15%] bg-background absolute z-20 top-36 "></div>
 
             <motion.img
@@ -34,7 +34,7 @@ const Work = () => {
             />
 
             <motion.div
-                className="w-[15%] h-[15%] bg-[#b8dbef] absolute z-30 top-[145rem] left-[83.5rem] rounded-3xl overflow-hidden flex justify-end items-end"
+                className="w-[15%] h-[15%] bg-[#b8dbef] absolute z-30 top-[150rem] left-[83.5rem] rounded-3xl overflow-hidden flex justify-end items-end"
                 variants={fadeVariant}
                 initial="hidden"
                 whileInView="visible"
@@ -58,7 +58,7 @@ const Work = () => {
                         <img
                             src="/HomeMobile.svg"
                             alt="mobile"
-                            className="w-[85%] h-auto object-contain mt-28 ml-16"
+                            className="w-[75%] h-auto object-contain mt-24 ml-20"
                         />
                     </div>
                     <div className="w-[50%] h-full flex flex-col justify-start items-start">
