@@ -6,16 +6,16 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
-    <div className='bg-third w-full h-[40rem] flex justify-center items-start relative z-10'>
-      <img src="/FooterLine.svg" alt="Footer" className='absolute w-full h-[90%] mt-10 z-20' />
+    <div className='bg-third w-full h-[25rem] flex justify-center items-start relative z-10'>
+      <img src="/FooterLine.svg" alt="Footer" className='absolute w-full h-[90%] mt-5 z-20' />
       <div className='absolute w-[90%] h-[50%] bottom-36 z-30 flex justify-between items-center'>
-        <div className='h-[80%] w-[25%] flex flex-col justify-between items-start'>
-          <h1 className='text-7xl text-primary font-black'>Find Your <br /> Restroom</h1>
+        <div className='h-[80%] w-[25%] flex flex-col justify-between items-start mt-10'>
+          <h1 className='text-6xl text-primary font-black'>Find Your <br /> Restroom</h1>
           <nav className="w-full flex flex-col items-start p-6 gap-4">
             <Link
               to="/partner"
               id="partner-btn"
-              className="flex items-center justify-center rounded-full overflow-hidden relative"
+              className="flex items-center justify-center rounded-full overflow-hidden relative ml-[-2rem]"
               style={{ width: 'clamp(10rem, 12vw, 14rem)', height: '2.8rem' }}
             >
               <span className="btn-text whitespace-nowrap">BECOME A PARTNER</span>
@@ -23,7 +23,7 @@ const Footer = () => {
             </Link>
           </nav>
         </div>
-        <div className='h-full w-[50%] flex justify-between items-start'>
+        <div className='h-full w-[50%] flex justify-between items-start mt-10 text-base'>
           <ul className='flex flex-col p-6 gap-4'>
             <li>
               <Link to='/' className='block text-white hover:text-background hover:scale-105 cursor-pointer ease-in-out duration-300'>HOME</Link>
@@ -43,7 +43,7 @@ const Footer = () => {
             <li className='text-white hover:text-background hover:scale-105 cursor-pointer ease-in-out duration-300'>TERMS AND CONDITIONS</li>
             <li className='text-white hover:text-background hover:scale-105 cursor-pointer ease-in-out duration-300'>PRIVACY POLICY</li>
           </ul>
-          <div className='w-[20%] h-[3rem] flex justify-between items-center'>
+          <div className='w-[20%] h-[3rem] flex justify-between items-center mt-3'>
             <FaFacebook className='text-white text-2xl hover:scale-105 cursor-pointer ease-in-out duration-300 hover:text-primary' />
             <FaXTwitter className='text-white text-2xl hover:scale-105 cursor-pointer ease-in-out duration-300 hover:text-primary' />
             <FaInstagram className='text-white text-2xl hover:scale-105 cursor-pointer ease-in-out duration-300 hover:text-primary' />
