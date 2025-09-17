@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <div className='w-full h-full overflow-hidden'>
       <Hero />
-      {/* <Mirror />
+      <Mirror />
       <Work />
-      <Locations /> */}
+      <Locations />
     </div>
   )
 }

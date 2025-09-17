@@ -81,8 +81,8 @@ const Hero = () => {
                                 lg:left-[30rem] lg:top-[5rem]
                                 md:left-[23rem] md:top-[4rem]'>
           <h1 className='text-primary font-bold
-                        2xl:text-[10rem] 2xl:leading-[8rem]
-                        xl:text-[10rem] xl:leading-[8rem]
+                        2xl:text-[8rem] 2xl:leading-[8rem]
+                        xl:text-[7rem] xl:leading-[8rem]
                         lg:text-[7rem] lg:leading-[6rem]
                         md:text-[5rem] md:leading-[4rem]'>
             Find Your Restroom
