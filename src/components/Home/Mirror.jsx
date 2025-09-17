@@ -160,20 +160,20 @@ const Mirror = () => {
           <img src="/Home-character3.svg" alt="char3"
             className='absolute
         2xl:top-[8rem] 2xl:left-[10rem] 2xl:h-[30rem] 2xl:w-[20rem]
-        xl:top-[7rem] xl:left-[8rem] xl:h-[26rem] xl:w-[17rem]
+        xl:top-[7rem] xl:left-[12rem] xl:h-[18rem] xl:w-[17rem]
         lg:top-[10rem] lg:left-[6rem] lg:h-[15rem] lg:w-[15rem]
         md:top-[5rem] md:left-[4rem] md:h-[18rem] md:w-[12rem]
         sm:top-[4rem] sm:left-[2rem] sm:h-[14rem] sm:w-[10rem]
         xs:relative xs:mx-auto xs:mt-[15rem] xs:order-2 xs:h-[12rem] xs:w-[9rem]'/>
           <div className='w-[40%] h-auto absolute z-30
       2xl:left-[60rem] 2xl:top-[1rem]
-      xl:left-[52rem] xl:top-[5rem]
+      xl:left-[45rem] xl:top-[5rem]
       lg:left-[33rem] lg:top-[2rem]
       md:left-[36rem] md:top-[1rem]
       sm:right-4 sm:top-[1rem] sm:w-[45%]
       xs:relative xs:left-0 xs:top-0 xs:w-[90%] xs:mx-auto xs:text-center xs:order-1
       flex flex-col justify-around items-start xs:items-center gap-4'>
-            <h1 className='2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-primary font-bold'>
+            <h1 className='2xl:text-7xl xl:text-5xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-primary font-bold'>
               A tiny ask shouldn't <br className='xs:hidden' /> feel so big.
             </h1>
             <p className='2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm xs:text-xs text-gray-500 font-medium'>
@@ -187,7 +187,7 @@ const Mirror = () => {
         {/* THIRD SECTION */}
         <motion.div
           className='absolute z-30 w-full h-auto
-      2xl:top-[90rem] xl:top-[65rem] lg:top-[40rem] md:top-[60rem] sm:top-[50rem] xs:top-[40rem]
+      2xl:top-[90rem] xl:top-[53rem] lg:top-[40rem] md:top-[60rem] sm:top-[50rem] xs:top-[40rem]
       flex flex-col justify-around items-start'
           variants={fadeVariant}
           initial="hidden"
@@ -196,7 +196,7 @@ const Mirror = () => {
           viewport={{ once: false, amount: 0.2 }}
         >
           <div className='w-[40%] h-auto absolute z-30
-      2xl:left-64 2xl:top-10 xl:left-44 xl:top-8 lg:left-32 lg:top-20 md:left-16 md:top-4 sm:left-8 sm:top-3
+      2xl:left-64 2xl:top-10 xl:left-44 xl:top-12 lg:left-32 lg:top-20 md:left-16 md:top-4 sm:left-8 sm:top-3
       xs:relative xs:left-0 xs:top-0 xs:w-[90%] xs:mx-auto xs:text-center
       flex flex-col justify-around items-start xs:items-center gap-4'>
             <h1 className='2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-primary font-bold'>
@@ -211,7 +211,7 @@ const Mirror = () => {
           <img src="/Home-character4.svg" alt="char4"
             className='absolute z-30
         2xl:left-[70rem] 2xl:top-[15rem] 2xl:h-[30rem] 2xl:w-[20rem]
-        xl:left-[60rem] xl:top-[11rem] xl:h-[26rem] xl:w-[17rem]
+        xl:left-[55rem] xl:top-[11rem] xl:h-[22rem] xl:w-[17rem]
         lg:left-[40rem] lg:top-[9rem] lg:h-[22rem] lg:w-[15rem]
         md:left-[40rem] md:top-[7rem] md:h-[18rem] md:w-[12rem]
         sm:right-4 sm:top-[5rem] sm:h-[14rem] sm:w-[10rem]

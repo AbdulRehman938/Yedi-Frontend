@@ -19,7 +19,7 @@ const Work = () => {
     }, [])
 
     return (
-        <div className="w-full h-[180rem] bg-background relative top-[13.5rem] flex justify-center items-start">
+        <div className="w-full h-[180rem] bg-background relative top-[-10.5rem] flex justify-center items-start">
             <div className="w-[20%] h-[15%] bg-background absolute z-20 top-36 "></div>
 
             <motion.img
