@@ -53,15 +53,15 @@ const Header = () => {
     }, [activeIdx, hoverIdx]);
 
     return (
-        <div className={`fixed top-0 left-0 z-50 flex justify-center w-full transition-all duration-300 ${scrolled ? 'mt-2' : ''}`}>
-            <div className={`flex justify-between items-center transition-all ease-in-out ${scrolled ? 'rounded-xl py-2 w-[92%] md:w-[88%] lg:w-[90%] px-5 bg-white' : 'w-full px-4 md:px-8 py-2 bg-transparent'}`} style={{ minHeight: '4rem' }}>
+        <div className={`fixed top-0 left-0 z-50 flex justify-center max-w-2xl min-w-full transition-all duration-300 ${scrolled ? 'mt-2' : ''}`}>
+            <div className={`flex justify-between items-center transition-all ease-in-out ${scrolled ? 'w-full px-4 md:px-8 py-2 bg-transparent' : 'rounded-xl py-2 w-[92%] md:w-[88%] lg:w-[90%] px-5 bg-white'}`} style={{ minHeight: '4rem' }}>
                 {/* Logo */}
                 <div className="h-full w-20 sm:w-32 flex items-center">
                     <img src="/Logo.svg" alt="logo" className="w-full h-full object-fill" />
                 </div>
 
                 {/* Navbar */}
-                <div id="navbar" className="hidden md:flex items-center justify-center md:mr-10 ml-20 relative" style={{ width: 'calc(100% - 20rem)', maxWidth: '40rem' }}>
+                <div id="navbar" className="hidden max-w-2xl md:flex md:text-sm items-center justify-center md:mr-10 ml-20 relative" style={{ width: 'calc(100% - 20rem)', maxWidth: '2xl' }}>
                     <nav ref={navRef} className="w-full flex justify-center relative gap-[3vw]">
                         {navLinks.map((link, idx) => (
                             <Link
@@ -115,7 +115,7 @@ const Header = () => {
 
             {/* Mobile Menu - Animated dropdown */}
             <div
-                className={`fixed top-0 ${scrolled ? 'right-[1.15rem] w-[calc(60%-2rem)]' : 'right-0 w-[50%]'} h-auto rounded-b-3xl bg-white shadow-lg z-40 transform transition-all duration-500 ease-in-out flex flex-col items-start md:hidden ${menuOpen
+                className={`fixed top-0 ${scrolled ? 'right-[1.15rem] w-[calc(60%-2rem)]' : 'right-0 w-[50%]'} h-auto rounded-b-3xl bg-white shadow-lg sm:w-[50%] z-40 transform transition-all duration-500 ease-in-out flex flex-col items-start md:hidden ${menuOpen
                     ? 'opacity-100 translate-y-[4rem]'
                     : 'opacity-0 -translate-y-full pointer-events-none'
                     }`}

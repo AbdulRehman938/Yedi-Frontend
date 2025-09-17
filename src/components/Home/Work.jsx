@@ -19,13 +19,13 @@ const Work = () => {
     }, [])
 
     return (
-        <div className="w-full h-[120rem] pt-20 bg-background relative top-[-10.5rem] flex justify-center items-start">
-            <div className="w-[50%] h-[15%] bg-background absolute z-20 top-36 right-[45rem] "></div>
+        <div className="work-container w-full h-[120rem] pt-20 bg-background relative top-[-10.5rem] flex justify-center items-start">
+            <div className="work-bg-decor w-[50%] h-[15%] bg-background absolute z-20 top-36 right-[45rem]"></div>
 
             <motion.img
                 src="/HomeWorkSlide.svg"
                 alt="slide"
-                className="w-full h-full object-cover absolute z-40"
+                className="work-main-slide w-full h-full object-cover absolute z-40"
                 variants={fadeVariant}
                 initial="hidden"
                 whileInView="visible"
@@ -34,44 +34,44 @@ const Work = () => {
             />
 
             <motion.div
-                className="w-[15%] h-[15%] bg-[#b8dbef] absolute z-30 top-[100rem] left-[55.5rem] rounded-3xl overflow-hidden flex justify-end items-end"
+                className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-30 top-[100rem] left-[55.5rem] rounded-3xl overflow-hidden flex justify-end items-end"
                 variants={fadeVariant}
                 initial="hidden"
                 whileInView="visible"
                 exit="exit"
                 viewport={{ once: false, amount: 0.2 }}
             >
-                <div className="w-[90%] h-full bg-[#77b0d2] rounded-tl-3xl rounded-bl-3xl"></div>
+                <div className="work-decor-inner w-[90%] h-full bg-[#77b0d2] rounded-tl-3xl rounded-bl-3xl"></div>
             </motion.div>
 
-            <div className="w-[80%] h-[55%] mt-[7rem] absolute z-40 gap-10 flex flex-col justify-between items-center">
+            <div className="work-sections w-[80%] h-[55%] mt-[7rem] absolute z-40 gap-10 flex flex-col justify-between items-center">
                 {/* Section 1 */}
                 <motion.div
-                    className="w-full h-[35%] flex flex-row justify-center items-center"
+                    className="work-section1 w-full h-[35%] flex flex-row justify-center items-center"
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"
                     exit="exit"
                     viewport={{ once: false, amount: 0.2 }}
                 >
-                    <div className="w-[50%] h-full">
+                    <div className="work-section1-img w-[50%] h-full">
                         <img
                             src="/HomeMobile.svg"
                             alt="mobile"
-                            className="w-full h-[83%] mt-[4rem] object-contain"
+                            className="work-section1-image w-full h-[83%] mt-[4rem] object-contain"
                         />
                     </div>
-                    <div className="w-[48%] ml-5 mt-[-2rem] h-full flex flex-col justify-start items-start">
-                        <h1 className="text-primary font-bold text-[4rem] relative bottom-[5rem]">
+                    <div className="work-section1-text w-[48%] ml-5 mt-[-2rem] h-full flex flex-col justify-start items-start">
+                        <h1 className="work-section1-title text-primary font-bold text-[4rem] relative bottom-[5rem]">
                             How it works
                         </h1>
-                        <div className="w-full ml-10 h-[15rem] flex justify-between items-start">
-                            <div className="w-[3rem] h-[3rem] bg-primary rounded-full flex justify-center mt-2 items-center text-2xl text-white font-semibold">
+                        <div className="work-step1 w-full ml-10 h-[15rem] flex justify-between items-start">
+                            <div className="work-step1-number w-[3rem] h-[3rem] bg-primary rounded-full flex justify-center mt-2 items-center text-2xl text-white font-semibold">
                                 1
                             </div>
-                            <div className="w-[85%] h-full flex flex-col justify-start gap-10 items-start">
-                                <h1 className="text-primary font-bold text-6xl">Find</h1>
-                                <p className="text-gray-600 text-xl">
+                            <div className="work-step1-content w-[85%] h-full flex flex-col justify-start gap-10 items-start">
+                                <h1 className="work-step1-title text-primary font-bold text-6xl">Find</h1>
+                                <p className="work-step1-desc text-gray-600 text-xl">
                                     Browse the map to find nearby <br /> restrooms with details like distance, <br /> availability, and amenities.
                                 </p>
                             </div>
@@ -81,28 +81,28 @@ const Work = () => {
 
                 {/* Section 2 */}
                 <motion.div
-                    className="w-full h-[30%] flex flex-row justify-center items-center"
+                    className="work-section2 w-full h-[30%] flex flex-row justify-center items-center"
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"
                     exit="exit"
                     viewport={{ once: false, amount: 0.2 }}
                 >
-                    <div className="w-[50%] h-full">
+                    <div className="work-section2-img w-[50%] h-full">
                         <img
                             src="/HomeMobile2.svg"
                             alt="Mobile2"
-                            className="w-full h-full object-contain"
+                            className="work-section2-image w-full h-full object-contain"
                         />
                     </div>
-                    <div className="w-[50%] h-full mt-[-2rem] flex flex-col justify-start items-start">
-                        <div className="w-full ml-20 mt-5 h-[15rem] flex justify-between items-start">
-                            <div className="w-[3rem] h-[3rem] bg-primary rounded-full flex justify-center mt-2 items-center text-2xl text-white font-semibold">
+                    <div className="work-section2-text w-[50%] h-full mt-[-2rem] flex flex-col justify-start items-start">
+                        <div className="work-step2 w-full ml-20 mt-5 h-[15rem] flex justify-between items-start">
+                            <div className="work-step2-number w-[3rem] h-[3rem] bg-primary rounded-full flex justify-center mt-2 items-center text-2xl text-white font-semibold">
                                 2
                             </div>
-                            <div className="w-[85%] h-full flex flex-col justify-start gap-10 items-start">
-                                <h1 className="text-primary font-bold text-6xl">Scan</h1>
-                                <p className="text-gray-600 text-xl">
+                            <div className="work-step2-content w-[85%] h-full flex flex-col justify-start gap-10 items-start">
+                                <h1 className="work-step2-title text-primary font-bold text-6xl">Scan</h1>
+                                <p className="work-step2-desc text-gray-600 text-xl">
                                     At the door, scan the QR code for <br /> instant access.
                                 </p>
                             </div>
@@ -112,28 +112,28 @@ const Work = () => {
 
                 {/* Section 3 */}
                 <motion.div
-                    className="w-full h-[30%] flex flex-row justify-center items-center"
+                    className="work-section3 w-full h-[30%] flex flex-row justify-center items-center"
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"
                     exit="exit"
                     viewport={{ once: false, amount: 0.2 }}
                 >
-                    <div className="w-[50%] h-full">
+                    <div className="work-section3-img w-[50%] h-full">
                         <img
                             src="/HomeMobile3.svg"
                             alt="Mobile3"
-                            className="w-full h-full object-contain"
+                            className="work-section3-image w-full h-full object-contain"
                         />
                     </div>
-                    <div className="w-[50%] mt-[-2rem] h-full flex flex-col justify-start items-start">
-                        <div className="w-full ml-20 h-[15rem] flex justify-between items-start">
-                            <div className="w-[3rem] h-[3rem] bg-primary rounded-full flex justify-center items-center mt-2 text-2xl text-white font-semibold">
+                    <div className="work-section3-text w-[50%] mt-[-2rem] h-full flex flex-col justify-start items-start">
+                        <div className="work-step3 w-full ml-20 h-[15rem] flex justify-between items-start">
+                            <div className="work-step3-number w-[3rem] h-[3rem] bg-primary rounded-full flex justify-center items-center mt-2 text-2xl text-white font-semibold">
                                 3
                             </div>
-                            <div className="w-[85%] h-full flex flex-col justify-start gap-10 items-start">
-                                <h1 className="text-primary font-bold text-6xl">Unlock</h1>
-                                <p className="text-gray-600 text-xl">
+                            <div className="work-step3-content w-[85%] h-full flex flex-col justify-start gap-10 items-start">
+                                <h1 className="work-step3-title text-primary font-bold text-6xl">Unlock</h1>
+                                <p className="work-step3-desc text-gray-600 text-xl">
                                     When the light blinks green, turn the <br /> handle and enjoy a clean, comfortable <br /> restroom.
                                 </p>
                             </div>
@@ -141,6 +141,25 @@ const Work = () => {
                     </div>
                 </motion.div>
             </div>
+
+            {/* ---------- Media Queries for Laptop 100% & 125% ---------- */}
+            <style>{`
+                /* Laptop 100% */
+                @media (min-width: 1366px) and (max-width: 1440px) {
+                    .work-section1-title, .work-section2-title, .work-section3-title { font-size: 5rem !important; }
+                    .work-step1-title, .work-step2-title, .work-step3-title { font-size: 5.5rem !important; }
+                    .work-step1-desc, .work-step2-desc, .work-step3-desc { font-size: 1.4rem !important; }
+                    .work-section1-image, .work-section2-image, .work-section3-image { height: 80% !important; }
+                }
+
+                /* Laptop 125% */
+                @media (min-width: 1100px) and (max-width: 1200px) {
+                    .work-section1-title, .work-section2-title, .work-section3-title { font-size: 4.5rem !important; }
+                    .work-step1-title, .work-step2-title, .work-step3-title { font-size: 5rem !important; }
+                    .work-step1-desc, .work-step2-desc, .work-step3-desc { font-size: 1.2rem !important; }
+                    .work-section1-image, .work-section2-image, .work-section3-image { height: 75% !important; }
+                }
+            `}</style>
         </div>
     )
 }
