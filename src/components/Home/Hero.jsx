@@ -63,7 +63,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className='w-full min-h-[60vh] sm:min-h-[70vh] md:min-h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[100vh] 2xl:h-[140vh] relative overflow-hidden'>
+    <div className='w-full min-h-[60vh] sm:min-h-[70vh] md:min-h-[60vh] md:h-[70vh] lg:max-h-[70vh] xl:h-[100vh] 2xl:h-[140vh] relative overflow-hidden'>
       {/* Background path image */}
       <AnimatedItem className='absolute inset-0'>
         <img src="/path.svg" alt="path" className='absolute inset-0 w-full h-auto sm:block 2xl:h-[120vh] xl:h-[100vh] lg:h-[70vh] hidden object-cover z-0' />
