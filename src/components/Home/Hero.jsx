@@ -65,11 +65,11 @@ const Hero = () => {
   return (
     <div className='w-full min-h-[60vh] sm:min-h-[70vh] md:min-h-[60vh] lg:min-h-[100vh] xl:min-h-[120vh] 2xl:min-h-[140vh] relative overflow-hidden'>
       {/* Background path image */}
-      <AnimatedItem className='absolute inset-0'>
+      <AnimatedItem className='absolute inset-0 xl:h-[90vh]'>
         <img src="/path.svg" alt="path" className='absolute inset-0 w-full h-auto sm:block hidden object-cover z-0' />
       </AnimatedItem>
       <AnimatedItem className='absolute inset-0'>
-        <img src="/pathHomeMobile.svg" alt="path mobile" className='absolute inset-0 w-full h-[40rem] mb-[5rem] sm:hidden object-contain z-0' />
+        <img src="/pathHomeMobile.svg" alt="path mobile" className='absolute inset-0 w-full h-[60rem] mb-[5rem] xl:h-[50rem] sm:hidden object-contain z-0' />
       </AnimatedItem>
 
       {/* Desktop and tablet layout */}
@@ -77,26 +77,26 @@ const Hero = () => {
         <AnimatedItem className='absolute w-[50%] flex flex-col justify-start items-start h-[50%] 
                                 z-10
                                 2xl:left-[65rem] 2xl:top-[10rem]
-                                xl:left-[40rem] xl:top-[8rem]
+                                xl:left-[40rem] xl:top-[3rem]
                                 lg:left-[30rem] lg:top-[5rem]
                                 md:left-[23rem] md:top-[4rem]'>
           <h1 className='text-primary font-bold
                         2xl:text-[10rem] 2xl:leading-[8rem]
-                        xl:text-[10rem] xl:leading-[8rem]
+                        xl:text-[5rem] xl:leading-[7rem] xl:text-9xl
                         lg:text-[7rem] lg:leading-[6rem]
                         md:text-[5rem] md:leading-[4rem]'>
             Find Your Restroom
           </h1>
           <p className='text-black ml-4
                       2xl:text-5xl 2xl:mt-12
-                      xl:text-2xl xl:mt-10
+                      xl:text-2xl xl:mt-5
                       lg:text-xl lg:mt-5
                       md:text-lg md:mt-6'>
             Find. Scan. Unlock
           </p>
-          <div className='w-[50%] flex justify-between items-center ml-4
+          <div className='w-[30%] flex justify-between items-center ml-4
                         2xl:h-24 2xl:mt-12 2xl:w-[45%]
-                        xl:h-16 xl:mt-10
+                        xl:h-12 xl:mt-5
                         lg:h-14 lg:mt-5 lg:w-[60%]
                         md:h-12 md:mt-6 md:w-[70%]'>
             <AnimatedItem>
@@ -104,7 +104,7 @@ const Hero = () => {
                             hover:bg-[#b1b1b128] hover:scale-105 ease-in-out duration-300
                             w-[150%] h-[70%] 
                             2xl:text-lg 2xl:py-2 2xl:px-6 
-                            xl:text-base xl:py-1.5 xl:px-3
+                            xl:text-base xl:py-1 xl:px-5
                             lg:text-sm lg:py-1 lg:px-3
                             md:text-xs md:py-1 md:px-2'>
                 LOCATIONS
@@ -115,7 +115,7 @@ const Hero = () => {
                             hover:bg-primary hover:scale-105 ease-in-out duration-300
                             w-[120%] h-[70%]
                             2xl:text-xl 2xl:py-2 2xl:px-4
-                            xl:text-lg xl:py-1.5 xl:px-3
+                            xl:text-lg xl:py-1 xl:px-[0.4rem]
                             lg:text-sm lg:py-1 lg:px-3
                             md:text-xs md:py-1 md:px-2'>
                 DOWNLOAD APP
@@ -130,7 +130,7 @@ const Hero = () => {
             alt="character"
             className='relative z-10
                     2xl:top-[30rem] 2xl:left-[20rem] 2xl:w-[20rem]
-                    xl:top-[23rem] xl:left-[15rem] xl:w-[15%]
+                    xl:top-[17rem] xl:left-[15rem] xl:w-[20%]
                     lg:top-[17rem] lg:left-[15rem] lg:w-[15%]
                     md:top-[13rem] md:left-[10rem] md:w-[15%]'
           />
