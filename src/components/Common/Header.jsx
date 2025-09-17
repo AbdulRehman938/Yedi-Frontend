@@ -55,7 +55,7 @@ const Header = () => {
     return (
         <div className="fixed top-0 left-0 z-50 w-full flex justify-center">
             <div className={`w-full max-w-[1440px] flex justify-between items-center mx-[5vw] 
-      transition-all ease-in-out ${scrolled ? 'px-4 py-2 bg-transparent' : 'rounded-xl py-2 px-5 bg-white'}`}
+      transition-all ease-in-out ${scrolled ? 'px-4 py-2 bg-transparent' : 'rounded-xl py-2 px-5 mt-2 bg-white'}`}
                 style={{ minHeight: '4rem' }}>
                 {/* Logo */}
                 <div className="h-full w-20 sm:w-32 flex items-center">

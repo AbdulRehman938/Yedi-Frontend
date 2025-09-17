@@ -16,7 +16,7 @@ const cities = [
 
 const fadeVariant = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: 'easeOut' } }
 }
 
 const validationSchema = Yup.object({
@@ -50,7 +50,7 @@ const Locations = () => {
     }, [])
 
     return (
-        <div className='locations-container w-full h-[80rem] relative flex flex-col justify-start items-start bg-white'>
+        <div className='locations-container w-full h-[80rem] relative flex flex-col justify-start items-start bg-white overflow-hidden'>
             {/* Gradient BG */}
             <div className='locations-bg-top absolute w-full h-[10rem] mt-[-10rem] bg-gradient-to-t from-white to-background'></div>
             <div className='locations-bg-bottom absolute w-full h-[10rem] bg-third bottom-0'></div>
@@ -63,8 +63,8 @@ const Locations = () => {
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.2 }}
             >
-                <h1 className='locations-heading text-primary text-6xl font-black mb-6 ml-7'>Locations</h1>
-                <p className='locations-subtext text-xl font-semibold text-gray-500 ml-7'>Discover Yedi in your City</p>
+                <h1 className='locations-heading text-primary text-6xl font-black mb-5 mt-4 ml-2'>Locations</h1>
+                <p className='locations-subtext text-xl font-semibold text-gray-500 ml-2'>Discover Yedi in your City</p>
 
                 <motion.div
                     className='city-carousel relative w-full mt-16'
@@ -81,7 +81,7 @@ const Locations = () => {
                         {cities.map((city, i) => (
                             <motion.div
                                 key={i}
-                                className="city-card h-[20rem] w-[20rem] flex-shrink-0 mr-[2rem] -ml-2"
+                                className="city-card h-[20rem] w-[30rem] flex-shrink-0 mr-[2rem] -ml-2"
                                 variants={fadeVariant}
                                 initial="hidden"
                                 whileInView="visible"
@@ -89,9 +89,10 @@ const Locations = () => {
                             >
                                 <div className="city-img-wrapper h-[90%] w-full rounded-3xl overflow-hidden relative">
                                     <img
+                                        loading="lazy"
                                         src={city.img}
                                         alt={city.name}
-                                        className={`city-img w-full h-full object-cover transition duration-300 ${i > 1 ? 'filter grayscale' : ''}`}
+                                        className={`city-img w-full h-full object-cover transition load duration-300 ${i > 1 ? 'filter grayscale' : ''}`}
                                     />
                                     {i > 1 && (
                                         <div className="city-coming-soon absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center">
@@ -107,7 +108,7 @@ const Locations = () => {
                     </div>
 
                     {/* Arrows */}
-                    <div className='city-arrows w-[15rem] h-[5rem] flex justify-center gap-10 items-center relative left-[50rem] top-8'>
+                    <div className='city-arrows w-[15rem] h-[5rem] flex justify-center gap-10 items-center relative left-[60rem] top-8'>
                         <div
                             onClick={scrollLeft}
                             className='arrow-left w-[20%] h-[50%] rounded-full bg-background hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 ease-in-out duration-300'
@@ -125,7 +126,7 @@ const Locations = () => {
             </motion.div>
 
             <motion.button
-                className='learn-more-btn text-gray-600 p-5 border-2 border-gray-500 text-lg cursor-pointer hover:bg-secondary hover:scale-105 ease-in-out duration-300 hover:border-transparent rounded-3xl w-[10rem] h-[2rem] absolute z-10 top-[40rem] left-[35rem] flex justify-center items-center'
+                className='learn-more-btn text-gray-600 p-5 border-2 border-gray-500 text-lg cursor-pointer hover:bg-secondary hover:scale-105 ease-in-out duration-300 hover:border-transparent rounded-3xl w-[10rem] h-[2rem] absolute z-10 top-[40rem] left-[40rem] flex justify-center items-center'
                 variants={fadeVariant}
                 initial="hidden"
                 whileInView="visible"
@@ -166,7 +167,7 @@ const Locations = () => {
                                     placeholder="Email Address"
                                     className='form-input py-3 px-4 w-full border-2 border-third text-third text-xl rounded-full bg-transparent'
                                 />
-                                <ErrorMessage name="email" component="div" className="form-error text-red-500 text-lg mt-1 ml-4" />
+                                <ErrorMessage name="email" component="div" className="form-error text-red-500 text-sm mt-[-2rem] ml-4" />
                             </div>
                             <div className='form-field w-full mt-[-1rem]'>
                                 <Field
@@ -187,39 +188,6 @@ const Locations = () => {
                     )}
                 </Formik>
             </motion.div>
-
-            {/* ---------- Media Queries for Laptop 100% & 125% ---------- */}
-            <style>{`
-                /* ---------- Laptop 100% (≈1366px–1440px) ---------- */
-                @media (min-width: 1366px) and (max-width: 1440px) {
-                    .locations-heading { font-size: 4.5rem !important; }
-                    .locations-subtext { font-size: 1.5rem !important; }
-                    .city-card { width: 18rem !important; height: 18rem !important; }
-                    .city-img { object-fit: cover !important; }
-                    .city-name { font-size: 1.2rem !important; }
-                    .arrow-left, .arrow-right { width: 25% !important; height: 60% !important; }
-                    .learn-more-btn { width: 12rem !important; height: 3rem !important; font-size: 1.2rem !important; }
-                    .newsletter-heading { font-size: 5rem !important; }
-                    .newsletter-subtext { font-size: 1.4rem !important; }
-                    .form-input { font-size: 1rem !important; padding: 0.75rem !important; }
-                    .form-submit-btn { font-size: 1.5rem !important; padding: 0.75rem 2rem !important; }
-                }
-
-                /* ---------- Laptop 125% (≈1100px–1200px) ---------- */
-                @media (min-width: 1100px) and (max-width: 1200px) {
-                    .locations-heading { font-size: 4rem !important; }
-                    .locations-subtext { font-size: 1.3rem !important; }
-                    .city-card { width: 16rem !important; height: 16rem !important; }
-                    .city-img { object-fit: cover !important; }
-                    .city-name { font-size: 1.1rem !important; }
-                    .arrow-left, .arrow-right { width: 22% !important; height: 55% !important; }
-                    .learn-more-btn { width: 10rem !important; height: 2.5rem !important; font-size: 1.1rem !important; }
-                    .newsletter-heading { font-size: 4.5rem !important; }
-                    .newsletter-subtext { font-size: 1.3rem !important; }
-                    .form-input { font-size: 0.9rem !important; padding: 0.7rem !important; }
-                    .form-submit-btn { font-size: 1.3rem !important; padding: 0.6rem 1.8rem !important; }
-                }
-            `}</style>
         </div>
     )
 }

@@ -8,11 +8,11 @@ const Home = () => {
   return (
     <div className="w-full flex flex-col items-center">
       {/* Wrap sections in max width container */}
-      <div className="w-full max-w-[1440px] mx-auto">
+      <div className="w-full max-w-[1440px] overflow-x-visible">
         <Hero />
-        {/* <Mirror /> */}
-        {/* <Work /> */}
-        {/* <Locations /> */}
+        <Mirror />
+        <Work />
+        <Locations />
       </div>
     </div>
   )

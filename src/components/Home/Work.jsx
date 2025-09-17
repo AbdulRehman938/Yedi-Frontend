@@ -34,7 +34,7 @@ const Work = () => {
             />
 
             <motion.div
-                className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-30 top-[100rem] left-[55.5rem] rounded-3xl overflow-hidden flex justify-end items-end"
+                className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-30 top-[105rem] left-[63.2rem] rounded-3xl overflow-hidden flex justify-end items-end"
                 variants={fadeVariant}
                 initial="hidden"
                 whileInView="visible"
@@ -44,10 +44,10 @@ const Work = () => {
                 <div className="work-decor-inner w-[90%] h-full bg-[#77b0d2] rounded-tl-3xl rounded-bl-3xl"></div>
             </motion.div>
 
-            <div className="work-sections w-[80%] h-[55%] mt-[7rem] absolute z-40 gap-10 flex flex-col justify-between items-center">
+            <div className="work-sections w-[80%] h-[55%] mt-[12rem] absolute z-40 gap-10 flex flex-col justify-between items-center">
                 {/* Section 1 */}
                 <motion.div
-                    className="work-section1 w-full h-[35%] flex flex-row justify-center items-center"
+                    className="work-section1 w-full h-[40%]  flex flex-row justify-center items-center"
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"
@@ -58,11 +58,11 @@ const Work = () => {
                         <img
                             src="/HomeMobile.svg"
                             alt="mobile"
-                            className="work-section1-image w-full h-[83%] mt-[4rem] object-contain"
+                            className="work-section1-image w-full h-full object-contain"
                         />
                     </div>
-                    <div className="work-section1-text w-[48%] ml-5 mt-[-2rem] h-full flex flex-col justify-start items-start">
-                        <h1 className="work-section1-title text-primary font-bold text-[4rem] relative bottom-[5rem]">
+                    <div className="work-section1-text w-[48%] ml-5 mt-[-13rem] h-full flex flex-col justify-start items-start">
+                        <h1 className="work-section1-title text-primary font-bold text-[4rem] relative bottom-[2rem]">
                             How it works
                         </h1>
                         <div className="work-step1 w-full ml-10 h-[15rem] flex justify-between items-start">
@@ -81,7 +81,7 @@ const Work = () => {
 
                 {/* Section 2 */}
                 <motion.div
-                    className="work-section2 w-full h-[30%] flex flex-row justify-center items-center"
+                    className="work-section2 w-full h-[40%] flex flex-row justify-center items-center"
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"
@@ -112,7 +112,7 @@ const Work = () => {
 
                 {/* Section 3 */}
                 <motion.div
-                    className="work-section3 w-full h-[30%] flex flex-row justify-center items-center"
+                    className="work-section3 w-full h-[40%] flex flex-row justify-center items-center"
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"
@@ -141,25 +141,6 @@ const Work = () => {
                     </div>
                 </motion.div>
             </div>
-
-            {/* ---------- Media Queries for Laptop 100% & 125% ---------- */}
-            <style>{`
-                /* Laptop 100% */
-                @media (min-width: 1366px) and (max-width: 1440px) {
-                    .work-section1-title, .work-section2-title, .work-section3-title { font-size: 5rem !important; }
-                    .work-step1-title, .work-step2-title, .work-step3-title { font-size: 5.5rem !important; }
-                    .work-step1-desc, .work-step2-desc, .work-step3-desc { font-size: 1.4rem !important; }
-                    .work-section1-image, .work-section2-image, .work-section3-image { height: 80% !important; }
-                }
-
-                /* Laptop 125% */
-                @media (min-width: 1100px) and (max-width: 1200px) {
-                    .work-section1-title, .work-section2-title, .work-section3-title { font-size: 4.5rem !important; }
-                    .work-step1-title, .work-step2-title, .work-step3-title { font-size: 5rem !important; }
-                    .work-step1-desc, .work-step2-desc, .work-step3-desc { font-size: 1.2rem !important; }
-                    .work-section1-image, .work-section2-image, .work-section3-image { height: 75% !important; }
-                }
-            `}</style>
         </div>
     )
 }
