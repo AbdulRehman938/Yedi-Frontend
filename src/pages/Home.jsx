@@ -6,11 +6,14 @@ import Locations from '../components/Home/Locations'
 
 const Home = () => {
   return (
-    <div className='w-full h-full overflow-hidden'>
-      <Hero />
-      {/* <Mirror /> */}
-      {/* <Work />
-      <Locations /> */}
+    <div className="w-full flex flex-col items-center">
+      {/* Wrap sections in max width container */}
+      <div className="w-full max-w-[1440px] mx-auto">
+        <Hero />
+        {/* <Mirror /> */}
+        {/* <Work /> */}
+        {/* <Locations /> */}
+      </div>
     </div>
   )
 }
