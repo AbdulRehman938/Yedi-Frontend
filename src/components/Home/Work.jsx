@@ -58,7 +58,7 @@ const Work = () => {
                         <img
                             src="/HomeMobile.svg"
                             alt="mobile"
-                            className="w-[75%] h-auto object-contain mt-24 ml-20"
+                            className="w-[75%] h-auto object-contain mt-24 ml-16"
                         />
                     </div>
                     <div className="w-[50%] h-full flex flex-col justify-start items-start">
